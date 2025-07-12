@@ -41,6 +41,9 @@ const onSubmit = e => {
 
   localStorage.removeItem(KEY_STORAGE);
   e.currentTarget.reset();
+
+  formData.email = '';
+  formData.message = '';
 };
 
 formEl.addEventListener('input', onInput);
